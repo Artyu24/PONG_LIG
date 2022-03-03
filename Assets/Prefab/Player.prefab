@@ -136,8 +136,10 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   componentsToDisable:
-  - {fileID: 0}
-  playerUIPrefeb: {fileID: 6894877416280416983, guid: 5ef894fc5b9516946b80834a13b83248, type: 3}
+  - {fileID: 3078262947438081934}
+  - {fileID: 3326168497674977103}
+  playerCameraPrefab: {fileID: 7233048228759432571, guid: 8fd7bc35e4619c249b1d45c08ec555e4, type: 3}
+  playerUIPrefab: {fileID: 6894877416280416983, guid: 5ef894fc5b9516946b80834a13b83248, type: 3}
 --- !u!114 &3078262947438081934
 MonoBehaviour:
   m_ObjectHideFlags: 0

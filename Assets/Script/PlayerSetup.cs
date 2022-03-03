@@ -9,7 +9,9 @@ public class PlayerSetup : NetworkBehaviour
     private Behaviour[] componentsToDisable;
 
     [SerializeField] 
-    private GameObject playerUIPrefeb;
+    private GameObject playerCameraPrefab;
+    [SerializeField] 
+    private GameObject playerUIPrefab;
     private GameObject playerUIInstance;
     public GameObject GetPlayerUIInstance { get { return playerUIInstance; } }
 
@@ -24,8 +26,11 @@ public class PlayerSetup : NetworkBehaviour
         }
         else
         {
+            //CameraPrefab
+            Instantiate(playerCameraPrefab);
+
             // Création UI joueur local
-            playerUIInstance = Instantiate(playerUIPrefeb);
+            playerUIInstance = Instantiate(playerUIPrefab);
 
             // Config UI
             PlayerUI ui = playerUIInstance.GetComponent<PlayerUI>();
