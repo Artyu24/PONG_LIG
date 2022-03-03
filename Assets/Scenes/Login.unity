@@ -310,7 +310,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 342676936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c80450b9e1aec8f419d6612302ce9240, type: 3}
+  m_Script: {fileID: 11500000, guid: ffdf6c90d07174c49aee48868b9fd38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &342676938
@@ -792,7 +792,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1478938411}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07c3010ef95d50443859889bcf96898b, type: 3}
+  m_Script: {fileID: 11500000, guid: c94aafbc3cc26e64db7d3b072b4ed973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lobbySceneName: Lobby
