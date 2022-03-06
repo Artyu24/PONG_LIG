@@ -5,8 +5,6 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float speed = 5;
-
     private PlayerMotor motor;
 
     void Start()
@@ -16,10 +14,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        float yMov = Input.GetAxisRaw("Vertical");
-        Vector2 moveVertical = transform.up * yMov;
-        Vector2 velocity = moveVertical.normalized * speed;
-
-        motor.Move(velocity);
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mouseDirection = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
+        motor.Move(mouseDirection);
     }
 }
